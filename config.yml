@@ -1,0 +1,25 @@
+paths:
+  public: "public"
+groups:
+  scripts:
+    concat:
+      "/assets/app.js": "app/**/*.{js,coffee}"
+      "/assets/vendor.js": "vendor/**/*.{js,coffee}"
+    order:
+      - "vendor/depend/jquery.min.js"
+      - "vendor/depend/d3.v3.js"
+      - "..."
+      - "app/app.coffee"
+  styles:
+    concat:
+      "/assets/app.css": "app/style/[a-z]*.{css,scss,sass}"
+      "/assets/vendor.css": "vendor/**/[a-z]*.{css,scss,sass}"
+  views:
+    copy:
+      "/": "app/views/**/*.{html,hbs}"
+modules:
+  wrapper: "cmd"
+  ignored: "vendor/**/*"
+  definition: "/assets/app.js"
+notification: true
+

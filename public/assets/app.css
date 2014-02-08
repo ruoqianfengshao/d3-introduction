@@ -1,0 +1,180 @@
+/* line 1, app/style/index.scss */
+.deck-container {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 1.25em;
+  color: #aaa;
+  background: #000;
+}
+
+/* line 7, app/style/index.scss */
+.deck-container .slide {
+  background: #000;
+}
+
+/* line 10, app/style/index.scss */
+section.slide {
+  padding-left: 200px;
+  vertical-align: top;
+}
+
+/* line 14, app/style/index.scss */
+.deck-container h1 {
+  color: #0af;
+  font-weight: normal;
+  font-weight: 100;
+  text-shadow: 0 0 50px #0af, 0 0 3px #fff;
+}
+
+/* line 20, app/style/index.scss */
+.deck-container h2 {
+  color: #af0;
+  border-bottom-color: #ccc;
+  font-weight: normal;
+  font-weight: 100;
+  text-shadow: 0 0 15px #af0, 0 0 2px #fff;
+  border-bottom: 1px solid #333;
+}
+
+/* line 28, app/style/index.scss */
+.deck-container h3 {
+  color: #fff;
+  font-weight: normal;
+  font-weight: 100;
+  text-shadow: 0 0 10px #fff, 0 0 2px #fff;
+}
+
+/* line 34, app/style/index.scss */
+.deck-container pre {
+  border-color: #333;
+}
+
+/* line 37, app/style/index.scss */
+.deck-container pre code {
+  color: #fff;
+  white-space: pre;
+}
+
+/* line 41, app/style/index.scss */
+.deck-container code {
+  color: #f0a;
+  white-space: pre;
+  font-size: 16px;
+}
+
+/* line 46, app/style/index.scss */
+.deck-container blockquote {
+  font-size: 2em;
+  padding: 1em 2em;
+  color: #fff;
+  border-left: 5px solid #fff;
+}
+
+/* line 52, app/style/index.scss */
+.deck-container blockquote p {
+  margin: 0;
+}
+
+/* line 55, app/style/index.scss */
+.deck-container blockquote cite {
+  font-size: .5em;
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 100;
+  color: #aaa;
+  text-shadow: 0 0 15px #fff, 0 0 2px #fff;
+}
+
+/* line 63, app/style/index.scss */
+.deck-container ::-moz-selection {
+  background: #a0f;
+}
+
+/* line 66, app/style/index.scss */
+.deck-container ::selection {
+  background: #a0f;
+}
+
+/* line 69, app/style/index.scss */
+.deck-container a, .deck-container a:hover, .deck-container a:focus, .deck-container a:active, .deck-container a:visited {
+  color: #f0a;
+  text-decoration: none;
+}
+
+/* line 73, app/style/index.scss */
+.deck-container a:hover, .deck-container a:focus {
+  text-decoration: underline;
+}
+
+/* line 76, app/style/index.scss */
+.deck-container .deck-prev-link, .deck-container .deck-next-link {
+  background: #f0a;
+  text-shadow: 0 0 3px #fff;
+}
+
+/* line 80, app/style/index.scss */
+.deck-container .deck-prev-link, .deck-container .deck-prev-link:hover, .deck-container .deck-prev-link:focus, .deck-container .deck-prev-link:active, .deck-container .deck-prev-link:visited, .deck-container .deck-next-link, .deck-container .deck-next-link:hover, .deck-container .deck-next-link:focus, .deck-container .deck-next-link:active, .deck-container .deck-next-link:visited {
+  color: #fff;
+}
+
+/* line 83, app/style/index.scss */
+.deck-container .deck-prev-link:hover, .deck-container .deck-prev-link:focus, .deck-container .deck-next-link:hover, .deck-container .deck-next-link:focus {
+  text-decoration: none;
+}
+
+/* line 86, app/style/index.scss */
+.boxshadow .deck-container .deck-prev-link:hover, .boxshadow .deck-container .deck-prev-link:focus, .boxshadow .deck-container .deck-next-link:hover, .boxshadow .deck-container .deck-next-link:focus {
+  -webkit-box-shadow: 0 0 20px #f0a, 0 0 5px #fff;
+  -moz-box-shadow: 0 0 20px #f0a, 0 0 5px #fff;
+  box-shadow: 0 0 20px #f0a, 0 0 5px #fff;
+}
+
+/* line 91, app/style/index.scss */
+.deck-container .deck-status {
+  font-size: 0.6666em;
+}
+
+/* line 94, app/style/index.scss */
+.deck-container .goto-form {
+  background: #000;
+  border: 1px solid #f0a;
+}
+
+/* line 98, app/style/index.scss */
+.deck-container .goto-form label {
+  color: #fff;
+}
+
+/* line 101, app/style/index.scss */
+.deck-container.deck-menu .slide {
+  background: #333;
+}
+
+/* line 104, app/style/index.scss */
+.deck-container.deck-menu .deck-current {
+  background: #444;
+}
+
+/* line 107, app/style/index.scss */
+.boxshadow .deck-container.deck-menu .deck-current {
+  background: #000;
+  -webkit-box-shadow: 0 0 20px #f0a, 0 0 5px #fff;
+  -moz-box-shadow: 0 0 20px #f0a, 0 0 5px #fff;
+  box-shadow: 0 0 20px #f0a, 0 0 5px #fff;
+}
+
+/* line 113, app/style/index.scss */
+.no-touch .deck-container.deck-menu .slide:hover {
+  background: #444;
+}
+
+/* line 116, app/style/index.scss */
+.no-touch.boxshadow .deck-container.deck-menu .slide:hover {
+  background: #000;
+  -webkit-box-shadow: 0 0 20px #f0a, 0 0 5px #fff;
+  -moz-box-shadow: 0 0 20px #f0a, 0 0 5px #fff;
+  box-shadow: 0 0 20px #f0a, 0 0 5px #fff;
+}
+/* line 1, app/style/view.scss */
+ul {
+  list-style-type: none;
+}

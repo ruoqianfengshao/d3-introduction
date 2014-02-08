@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Your deck.js Presentation</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" type="text/css" href="/assets/vendor.css">
+  <link rel="stylesheet" type="text/css" href="/assets/app.css">
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide" id="title-slide">
+      <h1>D3.js</h1>
+      <!-- <h4>Made by SK</h4> -->
+    </section>
+
+    <section class="slide" id="agenda">
+      <h2>Agenda</h2>
+      <ul>
+        <li class="slide">
+          <h3>Introduction Of SVG</h3>
+        </li>
+        <li class="slide">
+          <h3>Introduction Of D3.js</h3>
+        </li>
+        <li class="slide">
+          <h3>How to init graph with d3</h3>
+        </li>
+        <li class="slide">
+          <h3>Some extends</h3>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide" id="svg-introduction">
+      <h2>SVG Introduction</h2>
+      <ul>
+        <li>
+          <h3>Scalable Vector Graphics(可伸缩矢量图形)</h3>
+        </li>
+        <li>
+          <h3>Use XML format definition graphics</h3>
+        </li>
+        <li>
+          <h3>World Wide Web Consortium standards</h3>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide" id="canvas-vs-svg">
+      <h2>Canvas VS SVG</h2>
+      <ul class="slide left" style="display:inline-block;vertical-align: top;">
+        <h3>Canvas</h3>
+        <li>
+          <h4>Javascript API</h4>
+        </li>
+        <li>
+          <h4>More harder to edit</h4>
+        </li>
+        <li>
+          <h4>Dependency resolution</h4>
+        </li>
+      </ul>
+      <ul class="slide right" style="display:inline-block;vertical-align: top;margin-left:50px;">
+        <h3>SVG</h3>
+        <li>
+          <h4>Not rely on resolution</h4>
+        </li>
+        <li>
+          <h4>Base on XML</h4>
+        </li>
+        <li>
+          <h4>Everything is object</h4>
+        </li>
+        <li>
+          <h4>Better interactivity and better dynamic</h4>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide" id="svg-element">
+      <h2>Some Elements Of SVG</h2>
+      <ul>
+        <li class="slide" style="display:inline-block;vertical-align:top;width:500px;height:250px;">
+          <h3>Circle</h3>
+          <svg><circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="red"/></svg>
+        </li>
+        <li class="slide" style="display:inline-block;vertical-align:top;width:500px;height:150px;">
+          <h3>Rect</h3>
+          <svg><rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)"/></svg>
+        </li>
+        <li class="slide" style="display:inline-block;vertical-align:top;width:500px;height:150px;">
+          <h3>Line</h3>
+          <svg><line x1="0" y1="0" x2="300" y2="300" style="stroke:rgb(99,99,99);stroke-width:2"/></svg>
+        </li>
+        <li class="slide" style="display:inline-block;vertical-align:top;width:400px;height:400px;">
+          <h3>Path</h3>
+          <svg style="width:400px;height:400px;margin-top:-150px;"><path d="M53 234
+            C53 234 51 234 51 234
+            C51 239 53 244 56 244
+            C64 244 71 239 71 234
+            C71 222 64 214 56 214
+            C42 214 31 222 31 234
+            C31 250 42 264 56 264
+            C75 264 91 250 91 234
+            C91 211 75 194 56 194
+            C31 194 11 211 11 234
+            C11 261 31 284 56 284
+            C86 284 111 261 111 234
+            C111 200 86 174 56 174"
+            style="fill:white;stroke:red;stroke-width:2"/>
+          </svg>
+        </li>
+        <li class="slide">
+          <h3>...</h3>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide" id="d3-introduction">
+      <h2>D3.js</h2>
+      <ul>
+        <li class="slide">
+          <h3>JavaScript library for manipulating documents based on data</h3>
+        </li>
+        <li class="slide">
+          <h3>Rich API</h3>
+        </li>
+        <li class="slide">
+          <h3>Rich data format</h3>
+        </li>
+        <li class="slide">
+          <h3>Abundant form</h3>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide" id="d3-data">
+      <h2>data accipted by d3</h2>
+      <ul>
+        <li class="slide">
+          <h3>d3.xhr</h3>
+          <ul>
+            <li>xhr.get/post</li>
+            <li>xhr.on</li>
+            <li>...</li>
+          </ul>
+        </li>
+        <li class="slide">
+          <h3>d3.json</h3>
+        </li>
+        <li class="slide">
+          <h3>d3.csv</h3>
+        </li>
+        <li class="slide">
+          <h3>d3.xml</h3>
+        </li>
+        <li class="slide">
+          <h3>...</h3>
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide" id="d3-format-line">
+      <h2>Line</h2>
+      <code style="">#生成一条折线
+        d3:
+        lineData = [{ "x": 1, "y": 5}, { "x": 20, "y": 20}, 
+          { "x": 40, "y": 10}, { "x": 60,  "y": 40}, 
+          { "x": 80, "y": 5}, { "x": 100, "y": 60}]
+        lineFunction = d3.svg.line()
+          .x((d) -> d.x )
+          .y((d) -> d.y )
+          .interpolate("linear")
+        svg1 = d3.select("#svg1")
+          .attr("width", 200)
+          .attr("height", 200)
+        svg1.append("path")
+          .attr("d", lineFunction(lineData))
+          .attr("stroke", "blue")
+          .attr("stroke-width", 2)
+          .attr("fill", "none")
+        <xmp>
+        svg:
+        <path d="M1,5L20,20L40,10L60,40L80,5L100,60" stroke="blue" stroke-width="2" fill="none"></path>
+        </xmp>
+      </code>
+      <svg id="svg1" style="float:left;margin-left:700px;margin-top:-300px;"></svg>
+    </section>
+
+    <section class="slide" id="dvcs-format-worth">
+      <h2>D3 data format worth</h2>
+      <h5>将json、xml、scv等以我们熟悉的数据格式组织的数据转换成svg中元素的路径数据，如path、rect、line等</h5>
+    </section>
+
+    <section class="slide" id="realtime">
+      <h1>How does realtime chart work?</h1>
+      <ul>
+        <li>Time interval</li>
+        <li>New data</li>
+        <li>update aixs and elements</li>
+      </ul>
+    </section>
+    <section class="slide" id="q-and-a">
+      <h1>Q&A</h1>
+    </section>
+
+    <section class="slide" id="thank-you">
+      <h1>Thanks for your watching!</h1>
+    </section>
+
+    <p class="deck-status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="number" name="slidenum" id="goto-slide">
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- <a href="." title="Permalink to this slide" class="deck-permalink">#</a> -->
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="/assets/vendor.js"></script>
+<script src="/assets/app.js"></script>
+<script>require("app/index")</script>
+
+</script>
+</body>
+</html>
