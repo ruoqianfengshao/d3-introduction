@@ -8,5 +8,8 @@
   * [d3.js](http://d3js.org/)
 
 # Run
+  * Be sure your ruby version is 2.0 or laster
+  * before run this, you need install Linner: `gem install linner`
   * command in `/bin/server` <br>
   $ &gt;`ruby -run -e httpd "./public" -p 3000`
+  * enjoy yourself
